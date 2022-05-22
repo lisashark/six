@@ -21,12 +21,13 @@ $font-family-top:'Wendy One', sans-serif;
 
 $fz-base:16px;
 $fz-middle:18px;
+$fz-big:20px;
 
 
 @mixin fz-fw($fz,$fw) {
     font-size:$fz;
     font-weight:$fw;
- }
+}
 
 // basic layout
 

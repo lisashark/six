@@ -157,35 +157,96 @@ body {
   color: #221E1F;
 }
 
-h1 {
+.bold-48-32 {
   font-size: 48px;
   font-weight: 700;
   line-height: 70px;
 }
 
-h2 {
+.bold-32-28 {
   font-size: 32px;
   font-weight: 700;
 }
 
-h3 {
+.bold-32-24 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.bold-24-18 {
   font-size: 24px;
   font-weight: 700;
 }
 
-h4 {
-  font-size: 20;
-  font-weight: 700;
-}
-
-h5 {
+.bold-18-18 {
   font-size: 18;
   font-weight: 700;
 }
 
-h6 {
+.bold-18-16 {
+  font-size: 18;
+  font-weight: 700;
+}
+
+.bold-16-16 {
   font-size: 16;
   font-weight: 700;
+}
+
+.text-20-18 {
+  font-size: 20;
+  font-weight: 400;
+}
+
+.text-20-16 {
+  font-size: 20;
+  font-weight: 400;
+}
+
+.text-18-16 {
+  font-size: 18;
+  font-weight: 400;
+}
+
+.text-16-16 {
+  font-size: 16;
+  font-weight: 400;
+}
+
+@media (max-width: 992px) {
+  .bold-48-32 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .bold-32-28 {
+    font-size: 28px;
+  }
+  .bold-32-24 {
+    font-size: 24px;
+  }
+  .bold-24-18 {
+    font-size: 18px;
+  }
+  .bold-18-16 {
+    font-size: 16px;
+  }
+  .text-20-18 {
+    font-size: 18px;
+  }
+  .text-20-16 {
+    font-size: 16px;
+  }
+  .text-18-16 {
+    font-size: 16px;
+  }
+}
+
+.fc-green {
+  color: #56C4C5;
+}
+
+.fc-black {
+  color: #221E1F;
 }
 
 .container {
@@ -262,16 +323,8 @@ header .logo {
   height: 40px;
 }
 
-header h5 {
-  color: #56C4C5;
-}
-
-header h1 {
+header .mg-8-0-16-0 {
   margin: 8px 0 16px 0;
-}
-
-header h4 {
-  font-weight: 400;
 }
 
 header .banner {

@@ -9,17 +9,11 @@ header {
         height: 40px;
     }
 
-    h5 {
-        color: $maincolor
-    }
 
-    h1 {
+    .mg-8-0-16-0 {
         margin: 8px 0 16px 0;
     }
 
-    h4 {
-        font-weight: 400;
-    }
 
     .banner {
         @include flex-sb-c;

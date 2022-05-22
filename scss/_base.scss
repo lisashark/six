@@ -22,30 +22,88 @@ body {
 
 // font style
 
-h1 {
+.bold-48-32 {
     @include fz-fw(48px, 700);
     line-height: 70px;
 }
 
-h2 {
+.bold-32-28 {
     @include fz-fw(32px, 700);
 }
 
-h3 {
+.bold-32-24 {
+    @include fz-fw(32px, 700);
+}
+
+.bold-24-18 {
     @include fz-fw(24px, 700);
 }
 
-h4 {
-    @include fz-fw(20, 700);
-}
-
-h5 {
+.bold-18-18 {
     @include fz-fw(18, 700);
 }
 
-h6 {
+.bold-18-16 {
+    @include fz-fw(18, 700);
+}
+
+.bold-16-16 {
     @include fz-fw(16, 700);
 }
+
+.text-20-18 {
+    @include fz-fw(20, 400);
+}
+
+.text-20-16 {
+    @include fz-fw(20, 400);
+}
+
+.text-18-16 {
+    @include fz-fw(18, 400);
+}
+
+.text-16-16 {
+    @include fz-fw(16, 400);
+}
+
+@media (max-width:$breakpoint) {
+    .bold-48-32 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .bold-32-28 {
+        font-size: 28px;
+    }
+
+    .bold-32-24 {
+        font-size: 24px;
+    }
+
+    .bold-24-18 {
+        font-size: 18px;
+    }
+
+    .bold-18-16 {
+        font-size: 16px;
+    }
+
+    .text-20-18 {
+        font-size: 18px;
+    }
+
+    .text-20-16 {
+        font-size: 16px;
+    }
+
+    .text-18-16 {
+        font-size: 16px;
+    }
+}
+
+.fc-green{color:$maincolor;}
+.fc-black{color:$black-font;}
 
 // layout
 
@@ -58,7 +116,7 @@ h6 {
 
 @media(max-width:$breakpoint) {
     .container {
-        max-width: 700px; 
+        max-width: 700px;
     }
 
 }
