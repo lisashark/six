@@ -1,0 +1,64 @@
+// basic style setting
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+img {
+    box-sizing: content-box;
+    max-width: 100%;
+    height: auto;
+}
+
+
+body {
+    font-family: $font-family-main;
+    font-size: 16px;
+    color: $black-font;
+}
+
+// font style
+
+h1 {
+    @include fz-fw(48px, 700);
+    line-height: 70px;
+}
+
+h2 {
+    @include fz-fw(32px, 700);
+}
+
+h3 {
+    @include fz-fw(24px, 700);
+}
+
+h4 {
+    @include fz-fw(20, 700);
+}
+
+h5 {
+    @include fz-fw(18, 700);
+}
+
+h6 {
+    @include fz-fw(16, 700);
+}
+
+// layout
+
+.container {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media(max-width:$breakpoint) {
+    .container {
+        max-width: 700px; 
+    }
+
+}

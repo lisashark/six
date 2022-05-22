@@ -1,0 +1,339 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@400;700&family=Wendy+One&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #221E1F;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 20;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 18;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 16;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+.btn-base {
+  /* Structure */
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn-nav {
+  font-size: 16px;
+  padding: 8px 32px;
+  border: none;
+  background-color: #FF5D50;
+  border-radius: 22px;
+  color: #FFFFFF;
+}
+
+.btn-nav:hover {
+  background-color: #e91100;
+}
+
+.btn-solid,
+.btn-active {
+  font-size: 18px;
+  padding: 12px 32px;
+  border-radius: 27px;
+  color: #FFFFFF;
+  background-color: #56C4C5;
+}
+
+.btn-solid:hover {
+  opacity: 0.7;
+}
+
+.btn-ghost {
+  font-size: 18px;
+  padding: 12px 32px;
+  border-radius: 27px;
+  color: #56C4C5;
+  background-color: #FFFFFF;
+  border: 1px solid #56C4C5;
+}
+
+.btn-ghost:hover {
+  color: #FFFFFF;
+  background-color: #56C4C5;
+}
+
+header {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg");
+  background-position: right 0px bottom 0px;
+  background-repeat: no-repeat;
+  height: 768px;
+}
+
+header .logo {
+  width: auto;
+  height: 40px;
+}
+
+header h5 {
+  color: #56C4C5;
+}
+
+header h1 {
+  margin: 8px 0 16px 0;
+}
+
+header h4 {
+  font-weight: 400;
+}
+
+header .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+header .banner img,
+header .banner .textbox {
+  width: 50%;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (max-width: 992px) {
+  header {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg");
+    background-position: left 50% bottom 0px;
+    height: auto;
+  }
+  header .logo {
+    height: 24px;
+  }
+  header .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  header .banner img,
+  header .banner .textbox {
+    width: 100%;
+  }
+  nav {
+    border-bottom: 2px solid #F5CA52;
+  }
+  nav div {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+/*# sourceMappingURL=all.css.map */

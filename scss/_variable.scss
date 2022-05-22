@@ -1,0 +1,39 @@
+// color style
+
+$maincolor:#56C4C5;
+$sblue_bg:#F7F9FD;
+$black-font:#221E1F;
+$gray-font:#747474;
+$gray-bd:#00000014;
+$gray-decoration:#DDDDDD;
+$gray-bg:#F5F5F5;
+$red:#FF5D50;
+$yellow:#F5CA52;
+$white:#FFFFFF;
+
+// font style
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@400;700&family=Wendy+One&display=swap');
+
+$font-family-main:'Noto Sans TC','PingFang TC', 'Microsoft JhengHei','微軟正黑體','Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-number:'Comfortaa','Noto Sans TC',sans-serif;
+$font-family-top:'Wendy One', sans-serif;
+
+$fz-base:16px;
+$fz-middle:18px;
+
+
+@mixin fz-fw($fz,$fw) {
+    font-size:$fz;
+    font-weight:$fw;
+ }
+
+// basic layout
+
+$breakpoint: 992px;
+
+@mixin flex-sb-c{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}

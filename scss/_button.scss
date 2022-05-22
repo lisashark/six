@@ -1,0 +1,55 @@
+.btn-base {
+    /* Structure */
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    // -webkit-user-drag: none;
+    // -webkit-user-select: none;
+    //    -moz-user-select: none;
+    //     -ms-user-select: none;
+    //         user-select: none;
+    font-family: $font-family-main;
+}
+
+.btn-nav {
+    font-size: $fz-base;
+    padding: 8px 32px;
+    border: none;
+    background-color: $red;
+    border-radius: 22px;
+    color: $white;
+    &:hover {
+        background-color: darken($red,20%);
+    }
+}
+
+
+
+.btn-solid,
+.btn-active {
+    font-size: $fz-middle;
+    padding: 12px 32px;
+    border-radius: 27px;
+    color: $white;
+    background-color: $maincolor;
+}
+
+.btn-solid:hover {
+    opacity: 0.7;
+}
+
+.btn-ghost {
+    font-size: $fz-middle;
+    padding: 12px 32px;
+    border-radius: 27px;
+    color: $maincolor;
+    background-color: $white;
+    border: 1px solid $maincolor;
+
+    &:hover {
+        color: $white;
+        background-color: $maincolor;
+    }
+}
+
