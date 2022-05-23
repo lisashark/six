@@ -9,28 +9,17 @@ header {
         height: 40px;
     }
 
-
-    .mg-8-0-16-0 {
-        margin: 8px 0 16px 0;
-    }
-
-
     .banner {
-        @include flex-sb-c;
         padding-top: 30px;
         padding-bottom: 30px;
-
-        img,
-        .textbox {
-            width: 50%;
-        }
-
+    }
+    h5 {
+        margin:8px 0 16px 0;
     }
 }
 
 nav {
     div {
-        @include flex-sb-c;
         padding-top: 24px;
         padding-bottom: 24px;
     }
@@ -51,13 +40,6 @@ nav {
             flex-direction: column;
             padding-top: 32px;
             padding-bottom: 32px;
-
-            img,
-            .textbox {
-                width: 100%;
-
-            }
-
         }
     }
     nav {

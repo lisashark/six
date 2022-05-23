@@ -1,0 +1,124 @@
+// font style
+@mixin fz-fw($fz,$fw) {
+    font-size:$fz;
+    font-weight:$fw;
+}
+
+.fz-48b {
+    @include fz-fw(48px, 700);
+    line-height: 70px;
+}
+
+.fz-32b {
+    @include fz-fw(32px, 700);
+}
+
+.fz-24b {
+    @include fz-fw(24px, 700);
+}
+
+.fz-18b {
+    @include fz-fw(18, 700);
+}
+
+.fz-16b {
+    @include fz-fw(16, 700);
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+@media (max-width:$breakpoint) {
+    
+    .mfz-32 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .mfz-28 {
+        font-size: 28px;
+    }
+
+    .mfz-24 {
+        font-size: 24px;
+    }
+
+    .mfz-18 {
+        font-size: 18px;
+    }
+
+    .mfz-16 {
+        font-size: 16px;
+    }
+}
+
+.fc-green{color:$maincolor;}
+.fc-black{color:$black-font;}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+// layout
+.col-1{
+    width:100%;
+}
+.col-2{
+    width:50%;
+}
+.col-3{
+    width:33.333%;
+}
+.col-4{
+    width:25%;
+}
+
+@media(max-width:$breakpoint) {
+    .mcol-1{
+        width:100%;
+    }
+}
+
+.card_box_aic{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_box_ais{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:stretch;
+}
+
+@mixin card_col($percent,$paddingLR) {
+    width:$percent;
+    padding-left: $paddingLR;
+    padding-right:$paddingLR;
+}
+
+@mixin card_title($fz,$color,$mrT,$mrB){
+    font-weight: 700;
+    font-size:$fz;
+    color:$color;
+    margin-top: $mrT;
+    margin-bottom: $mrB;
+}
+
+@mixin card_text($color){
+    color:$color;
+}

@@ -1,0 +1,105 @@
+.bgcircle {
+    max-width: 360px;
+    transform: translateX(-65%) translateY(-50%);
+}
+
+@media (max-width:$breakpoint) {
+    .bgcircle {
+        max-width: 126px;
+        transform: translateX(-65%) translateY(100%);
+    }
+}
+
+.socialapp {
+    margin-top: -240px;
+
+    ul {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    h2 {
+        margin-bottom: 48px;
+    }
+
+    li {
+        @include card_col(33.3333%, 28px);
+        text-align: center;
+
+        img {
+            max-width: 90px;
+        }
+    }
+
+    h3 {
+        @include card_title(24px, $black-font, 24px, 24px);
+    }
+
+    p {
+        @include card_text($gray-font);
+    }
+
+}
+
+@media (max-width:$breakpoint) {
+    .socialapp {
+        margin-top: 0px;
+
+        li {
+            @include card_col(100%, 0px);
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            @include card_title(18px, $black-font, 16px, 16px);
+        }
+    }
+}
+
+.anyrole {
+
+    h2 {
+        margin-bottom: 16px;
+        margin-top: 100px;
+    }
+
+    h4 {
+        margin-bottom: 48px;
+    }
+
+    li {
+        @include card_col(23%, 0px);
+        border-radius: 12px;
+        box-shadow:0px 2px 10px #00000014;
+        text-align: center;
+        margin-right: 4px;
+        margin-left: 4px;
+        padding-bottom: 24px;
+
+        img {
+            max-width: 260px;
+            border-radius: 12px 12px 0px 0px;
+            
+        }
+    }
+
+    h3 {
+        @include card_title(16px, $maincolor, 16px, 16px);
+    }
+}
+
+@media (max-width:$breakpoint) {
+    .anyrole {
+        margin-top: 0px;
+        ul{
+            justify-content: center;
+        }
+
+        li {
+            @include card_col(260px, 0px);
+            margin-bottom: 24px;
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+    }
+}

@@ -15,26 +15,16 @@ $white:#FFFFFF;
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@400;700&family=Wendy+One&display=swap');
 
-$font-family-main:'Noto Sans TC','PingFang TC', 'Microsoft JhengHei','微軟正黑體','Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-number:'Comfortaa','Noto Sans TC',sans-serif;
-$font-family-top:'Wendy One', sans-serif;
+$fontFamily-main:'Noto Sans TC','PingFang TC', 'Microsoft JhengHei','微軟正黑體','Helvetica Neue', Helvetica, Arial, sans-serif;
+$fontFfamily-number:'Comfortaa','Noto Sans TC',sans-serif;
+$fontFfamily-top:'Wendy One', sans-serif;
 
 $fz-base:16px;
 $fz-middle:18px;
 $fz-big:20px;
 
 
-@mixin fz-fw($fz,$fw) {
-    font-size:$fz;
-    font-weight:$fw;
-}
-
 // basic layout
 
 $breakpoint: 992px;
 
-@mixin flex-sb-c{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
