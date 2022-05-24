@@ -11,6 +11,7 @@
 
 .fz-32b {
     @include fz-fw(32px, 700);
+    line-height: 46px;
 }
 
 .fz-24b {
@@ -19,6 +20,7 @@
 
 .fz-18b {
     @include fz-fw(18, 700);
+    line-height: 26px;
 }
 
 .fz-16b {
@@ -31,6 +33,7 @@
 
 .fz-18 {
     font-size: 18px;
+    line-height: 26px;
 }
 
 .fz-16 {
@@ -54,6 +57,7 @@
 
     .mfz-18 {
         font-size: 18px;
+        line-height: 26px;
     }
 
     .mfz-16 {
@@ -84,6 +88,13 @@
 .col-4{
     width:25%;
 }
+.col-40{
+    width:44%;
+}
+.col-60{
+    width:56%;
+}
+
 
 @media(max-width:$breakpoint) {
     .mcol-1{
