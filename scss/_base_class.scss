@@ -19,12 +19,12 @@
 }
 
 .fz-18b {
-    @include fz-fw(18, 700);
+    @include fz-fw(18px, 700);
     line-height: 26px;
 }
 
 .fz-16b {
-    @include fz-fw(16, 700);
+    @include fz-fw(16px, 700);
 }
 
 .fz-20 {
@@ -72,6 +72,14 @@
     text-align: center;
 }
 
+
+@mixin textbye($line){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:$line;
+    -webkit-box-orient: vertical;
+}
 
 
 

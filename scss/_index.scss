@@ -7,7 +7,7 @@
 .imgwrap {
     position: relative;
     margin-top: -117px;
-    outline:1px #00000014;
+    outline: 1px #00000014;
 }
 
 .dec_circle_middle {
@@ -22,20 +22,32 @@
     }
 }
 
+.dec_circle_bottom {
+    // float:left;
+    max-width: 150px;
+    margin-left: -75px;
+    z-index: -99;
+    position: relative;
+}
+
+
 @media (max-width:$breakpoint) {
     .dec_circle_top {
         width: 126px;
         transform: translateX(-65%) translateY(100%);
     }
-    .imgwrap{
+
+    .imgwrap {
         margin-top: -103px;
     }
+
     .dec_circle_middle {
         width: 135px;
-        img{
-        transform: translateX(47px);
+
+        img {
+            transform: translateX(47px);
+        }
     }
-}
 }
 
 
@@ -43,17 +55,12 @@
 .socialapp {
     margin-top: -240px;
 
-    ul {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
     h2 {
         margin-bottom: 48px;
     }
 
     li {
-        @include card_col(33.3333%, 28px);
+        width: 33.3333%;
         text-align: center;
 
         img {
@@ -76,7 +83,7 @@
         margin-top: 0px;
 
         li {
-            @include card_col(100%, 0px);
+            width: 100%;
             margin-bottom: 24px;
         }
 
@@ -99,19 +106,21 @@
     }
 
     li {
-        @include card_col(23%, 0px);
+        width: calc(100% / 4 - 12px);
         border-radius: 12px;
         box-shadow: 0px 2px 10px #00000014;
         text-align: center;
         margin-right: 16px;
-
         padding-bottom: 24px;
         background-color: $white;
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
 
         img {
             max-width: 260px;
             border-radius: 12px 12px 0px 0px;
-
         }
     }
 
@@ -126,10 +135,11 @@
 
         ul {
             justify-content: center;
+            margin-right: 0;
         }
 
         li {
-            @include card_col(260px, 0px);
+            width: 260px;
             margin-bottom: 24px;
             margin-right: 8px;
             margin-left: 8px;
@@ -198,7 +208,6 @@
         margin-top: 163px;
 
         ul {
-            // padding-right: 0px;
             justify-content: center;
         }
 
@@ -223,32 +232,117 @@
 
 // customers' comment
 .comment {
-margin-top: 100px;
 
-    hr{
+    margin-top: 100px;
+
+    h2 {
+        margin-top: 72px;
+        margin-bottom: 48px;
+    }
+
+    ul {
+        // padding-top: 56px;
+        margin-top: -40px;
+    }
+
+    hr {
         border: 1px solid #DDDDDD;
         margin-top: 24px;
         margin-bottom: 24px;
     }
 
-    li{
-        @include card_col(33.333%,16px);
+    li {
+        width: calc(100%/3 - 10.67px);
         box-shadow: 0px 2px 10px #00000014;
         border-radius: 12px;
-        margin-right: 16px; 
+        margin-right: 16px;
         padding: 0 32px 24px 32px;
+        background-color: $white;
+
+        &:nth-last-child(1) {
+            margin-right: 0px;
+        }
+
+    }
+
+    .textbye {
+        @include textbye(3);
     }
 }
 
-.facepic{
+.facepic {
     border-radius: 50px;
-    width:80px;
+    width: 80px;
+    margin-top: -56px;
 }
 
-@media (max-width:$breakpoint){
-    
-    hr{
-        margin-top: 16px;
-        margin-bottom: 16px;
+.name-rate {
+    margin-top: 8px;
+}
+
+.rate {
+    img {
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width:$breakpoint) {
+
+    .comment {
+        li {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+
+        hr {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+
+    }
+}
+
+
+// footer
+.footerBanner {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 260px;
+
+    p {
+        margin-bottom: 48px;
+    }
+
+    .btn_base {
+        margin: 0 auto;
+    }
+}
+
+.footerBottom {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: $gray-bg;
+}
+
+@media (max-width:$breakpoint) {
+    .footerBanner {
+        padding-top: 293px;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:624px) {
+    .footerBanner {
+        background-size: contain;
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/footer_sm.svg');
+        background-position: top;
     }
 }
