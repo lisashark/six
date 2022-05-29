@@ -172,21 +172,56 @@ body {
   }
 }
 
-.stickyTop button {
+nav {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  z-index: 10;
+  position: relative;
+}
+
+nav .logo {
+  width: auto;
+  height: 40px;
+}
+
+@media (max-width: 992px) {
+  .m_yellowbb {
+    border-bottom: 2px solid #F5CA52;
+    z-index: 10;
+  }
+  nav div {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  nav .logo {
+    height: 24px;
+    vertical-align: middle;
+  }
+}
+
+.footerBottom {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #F5F5F5;
+}
+
+.stickyTop {
   border-radius: 50px;
   border: 0px;
   background-color: #56C4C5;
   font-family: 'Wendy One', sans-serif;
   color: #FFFFFF;
-  display: absolute;
+  display: block;
   position: fixed;
   bottom: 24px;
   right: 48px;
   width: 71px;
   height: 71px;
+  cursor: pointer;
+  z-index: 5;
 }
 
-.stickyTop button:hover {
+.stickyTop:hover {
   background-color: #2e8687;
   border: 5px solid #2e8687;
   width: 74px;
@@ -196,17 +231,17 @@ body {
 }
 
 @media (max-width: 992px) {
-  .stickyTop button {
+  .stickyTop {
     font-size: 14px;
     width: 50px;
     height: 50px;
-    bottom: 16px;
+    bottom: 40px;
     right: 16px;
   }
-  .stickyTop button:hover {
+  .stickyTop:hover {
     width: 54px;
     height: 54px;
-    bottom: 14px;
+    bottom: 38px;
     right: 14px;
   }
 }
@@ -391,59 +426,6 @@ body {
   background-color: #56C4C5;
 }
 
-header {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg");
-  background-position: right 0px bottom 0px;
-  background-repeat: no-repeat;
-  height: 768px;
-}
-
-header .logo {
-  width: auto;
-  height: 40px;
-}
-
-header .banner {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-header h5 {
-  margin: 8px 0 16px 0;
-}
-
-nav div {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-@media (max-width: 992px) {
-  header {
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg");
-    background-position: left 50% bottom 0px;
-    height: auto;
-  }
-  header .logo {
-    height: 24px;
-    vertical-align: middle;
-  }
-  header .banner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-  nav {
-    border-bottom: 2px solid #F5CA52;
-  }
-  nav div {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
 .dec_circle_top {
   max-width: 360px;
   -webkit-transform: translateX(-65%) translateY(-50%);
@@ -494,6 +476,38 @@ nav div {
   }
 }
 
+.index_bg {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg");
+  background-position: right 0px bottom 0px;
+  background-repeat: no-repeat;
+  height: 768px;
+}
+
+.index_bg .banner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.index_bg h3 {
+  margin: 8px 0 16px 0;
+}
+
+@media (max-width: 992px) {
+  .index_bg {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg");
+    background-position: left 50% bottom 0px;
+    height: auto;
+  }
+  .index_bg .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .socialapp {
   margin-top: -240px;
 }
@@ -511,7 +525,7 @@ nav div {
   max-width: 90px;
 }
 
-.socialapp h3 {
+.socialapp h4 {
   font-weight: 700;
   font-size: 24px;
   color: #221E1F;
@@ -531,7 +545,7 @@ nav div {
     width: 100%;
     margin-bottom: 24px;
   }
-  .socialapp h3 {
+  .socialapp h4 {
     font-weight: 700;
     font-size: 18px;
     color: #221E1F;
@@ -545,7 +559,7 @@ nav div {
   margin-top: 100px;
 }
 
-.anyrole h4 {
+.anyrole h3 {
   margin-bottom: 48px;
 }
 
@@ -569,7 +583,7 @@ nav div {
   border-radius: 12px 12px 0px 0px;
 }
 
-.anyrole h3 {
+.anyrole h4 {
   font-weight: 700;
   font-size: 16px;
   color: #56C4C5;
@@ -593,7 +607,7 @@ nav div {
     margin-right: 8px;
     margin-left: 8px;
   }
-  .anyrole h4 {
+  .anyrole h3 {
     margin-bottom: 32px;
   }
 }
@@ -628,7 +642,7 @@ nav div {
   margin-bottom: 16px;
 }
 
-.persona h3 {
+.persona h4 {
   font-weight: 700;
   font-size: 18px;
   color: #221E1F;
@@ -766,12 +780,6 @@ nav div {
 
 .footerBanner .btn_base {
   margin: 0 auto;
-}
-
-.footerBottom {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: #F5F5F5;
 }
 
 @media (max-width: 992px) {

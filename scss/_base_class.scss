@@ -1,4 +1,5 @@
 // font style
+//h1 page title;h2 section title;h3 subtitle; h4 card title ; h5 card subtitle ; h6 emphasized information
 @mixin fz-fw($fz,$fw) {
     font-size:$fz;
     font-weight:$fw;

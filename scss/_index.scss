@@ -30,7 +30,6 @@
     position: relative;
 }
 
-
 @media (max-width:$breakpoint) {
     .dec_circle_top {
         width: 126px;
@@ -50,6 +49,37 @@
     }
 }
 
+// header
+    .index_bg {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg');
+        background-position: right 0px bottom 0px;
+        background-repeat: no-repeat;
+        height: 768px;
+
+        .banner {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        h3 {
+            margin: 8px 0 16px 0;
+        }
+    }
+
+@media (max-width:$breakpoint) {
+
+    .index_bg {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg');
+        background-position: left 50% bottom 0px;
+        height: auto;
+
+        .banner {
+            flex-direction: column;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    }
+}
 
 // social plateform
 .socialapp {
@@ -68,7 +98,7 @@
         }
     }
 
-    h3 {
+    h4 {
         @include card_title(24px, $black-font, 24px, 24px);
     }
 
@@ -87,7 +117,7 @@
             margin-bottom: 24px;
         }
 
-        h3 {
+        h4 {
             @include card_title(18px, $black-font, 16px, 16px);
         }
     }
@@ -101,7 +131,7 @@
         margin-top: 100px;
     }
 
-    h4 {
+    h3 {
         margin-bottom: 48px;
     }
 
@@ -124,7 +154,7 @@
         }
     }
 
-    h3 {
+    h4 {
         @include card_title(16px, $maincolor, 16px, 16px);
     }
 }
@@ -145,7 +175,7 @@
             margin-left: 8px;
         }
 
-        h4 {
+        h3 {
             margin-bottom: 32px;
         }
     }
@@ -176,7 +206,7 @@
         margin-bottom: 16px;
     }
 
-    h3 {
+    h4 {
         @include card_title(18px, $black-font, 24px, 20px)
     }
 
@@ -325,12 +355,6 @@
     }
 }
 
-.footerBottom {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    background-color: $gray-bg;
-}
-
 @media (max-width:$breakpoint) {
     .footerBanner {
         padding-top: 293px;
@@ -339,7 +363,7 @@
     }
 }
 
-@media (max-width:624px) {
+@media (max-width:$mbreakpoint) {
     .footerBanner {
         background-size: contain;
         background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/footer_sm.svg');
