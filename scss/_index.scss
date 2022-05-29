@@ -271,7 +271,6 @@
     }
 
     ul {
-        // padding-top: 56px;
         margin-top: -40px;
     }
 
@@ -320,9 +319,20 @@
 @media (max-width:$breakpoint) {
 
     .comment {
+
+        h2 {
+            margin-bottom: 0px;
+        }
+        ul {
+            margin-top: -56px;
+        }
         li {
             width: 100%;
-            margin-bottom: 32px;
+            // margin-bottom: 32px;
+            margin-bottom: 90px;
+            &:nth-last-child(1){
+                margin-bottom: 0;
+            }
         }
 
         hr {

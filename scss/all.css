@@ -753,9 +753,18 @@ nav .logo {
 }
 
 @media (max-width: 992px) {
+  .comment h2 {
+    margin-bottom: 0px;
+  }
+  .comment ul {
+    margin-top: -56px;
+  }
   .comment li {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 90px;
+  }
+  .comment li:nth-last-child(1) {
+    margin-bottom: 0;
   }
   .comment hr {
     margin-top: 16px;
