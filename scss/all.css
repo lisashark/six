@@ -406,6 +406,7 @@ nav .logo {
   border-radius: 27px;
   color: #FFFFFF;
   background-color: #56C4C5;
+  border: none;
 }
 
 .btn_solid:hover {
@@ -804,5 +805,84 @@ nav .logo {
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/footer_sm.svg");
     background-position: top;
   }
+}
+
+.price_bg {
+  max-height: 470px;
+  background-color: #F7F9FD;
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 0px 0px 0px 300px;
+}
+
+.price_bg h1 {
+  margin-bottom: 16px;
+}
+
+.price_bg .banner {
+  padding-bottom: 180px;
+  padding-top: 92px;
+}
+
+.bannerpic {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 992px) {
+  .price_bg {
+    border-radius: 0px 0px 0px 120px;
+  }
+  .price_bg .m_yellowbb {
+    background-color: #FFFFFF;
+  }
+  .price_bg .banner {
+    padding-bottom: 120px;
+    padding-top: 48px;
+  }
+  .price_bg .bannerpic {
+    width: 50%;
+    top: 73.6px;
+  }
+}
+
+@media (max-width: 624px) {
+  .price_bg {
+    max-height: 568px;
+  }
+  .price_bg .banner {
+    padding-bottom: 361px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    max-height: 495px;
+  }
+  .price_bg .bannerpic {
+    display: none;
+  }
+}
+
+.priceTable h2 {
+  margin-top: 60px;
+  margin-bottom: 48px;
+}
+
+.price_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 54px;
+}
+
+.price_btn li {
+  margin-left: 16px;
 }
 /*# sourceMappingURL=all.css.map */
