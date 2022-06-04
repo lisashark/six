@@ -13,17 +13,14 @@
 .dec_circle_middle {
     position: absolute;
     right: 0;
-    width: 310px;
-    overflow-x: hidden;
+    width: 210px;
+    height:310px;
     z-index: -1;
-
-    img {
-        transform: translateX(100px);
-    }
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg');
+    background-size: cover;
 }
 
 .dec_circle_bottom {
-    // float:left;
     max-width: 150px;
     margin-left: -75px;
     z-index: -99;
@@ -41,11 +38,8 @@
     }
 
     .dec_circle_middle {
-        width: 135px;
-
-        img {
-            transform: translateX(47px);
-        }
+        height: 135px;
+        width: 88px;
     }
 }
 

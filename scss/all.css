@@ -274,6 +274,15 @@ nav .logo {
   font-weight: 700;
 }
 
+.fz-12b {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.fz-32 {
+  font-size: 32px;
+}
+
 .fz-20 {
   font-size: 20px;
 }
@@ -317,6 +326,10 @@ nav .logo {
 
 .fc-black {
   color: #221E1F;
+}
+
+.font-number {
+  font-family: 'Comfortaa','Noto Sans TC',sans-serif;
 }
 
 .text-center {
@@ -403,8 +416,7 @@ nav .logo {
   background-color: #e91100;
 }
 
-.btn_solid,
-.btn_active {
+.btn_solid {
   font-size: 18px;
   padding: 12px 32px;
   border-radius: 27px;
@@ -431,6 +443,11 @@ nav .logo {
   background-color: #56C4C5;
 }
 
+.btn_active {
+  color: #FFFFFF;
+  background-color: #56C4C5;
+}
+
 .dec_circle_top {
   max-width: 360px;
   -webkit-transform: translateX(-65%) translateY(-50%);
@@ -446,14 +463,11 @@ nav .logo {
 .dec_circle_middle {
   position: absolute;
   right: 0;
-  width: 310px;
-  overflow-x: hidden;
+  width: 210px;
+  height: 310px;
   z-index: -1;
-}
-
-.dec_circle_middle img {
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg");
+  background-size: cover;
 }
 
 .dec_circle_bottom {
@@ -473,11 +487,8 @@ nav .logo {
     margin-top: -103px;
   }
   .dec_circle_middle {
-    width: 135px;
-  }
-  .dec_circle_middle img {
-    -webkit-transform: translateX(47px);
-            transform: translateX(47px);
+    height: 135px;
+    width: 88px;
   }
 }
 
@@ -803,7 +814,7 @@ nav .logo {
   }
 }
 
-@media (max-width: 624px) {
+@media (max-width: 600px) {
   .footerBanner {
     background-size: contain;
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/footer_sm.svg");
@@ -821,6 +832,13 @@ nav .logo {
 
 .price_bg h1 {
   margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.price_bg h2 {
+  position: relative;
+  z-index: 1;
 }
 
 .price_bg .banner {
@@ -842,7 +860,7 @@ nav .logo {
     background-color: #FFFFFF;
   }
   .price_bg .banner {
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     padding-top: 48px;
   }
   .price_bg .bannerpic {
@@ -851,7 +869,7 @@ nav .logo {
   }
 }
 
-@media (max-width: 624px) {
+@media (max-width: 600px) {
   .price_bg {
     max-height: 568px;
   }
@@ -866,6 +884,10 @@ nav .logo {
   .price_bg .bannerpic {
     display: none;
   }
+}
+
+.priceTable {
+  position: relative;
 }
 
 .priceTable h2 {
@@ -886,18 +908,229 @@ nav .logo {
   margin-bottom: 54px;
 }
 
-.price_btn li {
-  margin-left: 16px;
+.price_btn button {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 12px 32px;
 }
 
-.priceBox li:first-child {
+.fillNum::after {
+  content: "位";
+  font-size: 12px;
+  display: inline;
+  color: #56C4C5;
+}
+
+.fillFee::after {
+  content: "TWD";
+  font-size: 12px;
+  display: inline;
+  margin-left: -6px;
+}
+
+.chooseBtn::after {
+  content: "位";
+}
+
+@media (max-width: 992px) {
+  .price_btn button {
+    font-size: 16px;
+    margin-left: 6px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .price_btn {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .nobar {
+    overflow-x: scroll;
+    margin-bottom: -20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+}
+
+.priceSection {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.priceBox {
+  width: calc(100% / 2 - 10px);
+  border-radius: 12px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+.priceBox:first-child {
   margin-right: 20px;
 }
 
-.priceBox li {
-  width: calc(100%/2 - 10px);
+.priceBox h4 {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.priceBox hr {
+  color: #DDDDDD;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wrap_priceDetail {
+  padding: 32px 24px;
+}
+
+.wrap_priceDetail > p {
+  margin-bottom: 32px;
+}
+
+.wrap_priceDetail a {
+  margin-top: 16px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+}
+
+.priceMath div {
+  background-color: #F5F5F5;
+  width: 43%;
+  max-width: 169px;
+  padding: 16px 0px;
   border-radius: 12px;
+}
+
+.priceMath span {
+  margin-left: 8px;
+}
+
+.priceMath p {
+  margin: 8px 0;
+}
+
+.function {
+  margin: 32px 0px 16px 0px;
+}
+
+.function li {
+  margin-bottom: 16px;
+}
+
+.function li:before {
+  content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg");
+  width: 16px;
+  margin-right: 13px;
+}
+
+@media (max-width: 992px) {
+  .priceSection {
+    width: 100%;
+  }
+  .priceBox {
+    width: 100%;
+  }
+  .priceBox:first-child {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .wrap_priceDetail {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.dec_circle_price {
+  display: block;
+  position: absolute;
+  top: calc(50% - 82px);
+  -webkit-transform: translateX(-70%);
+          transform: translateX(-70%);
+  left: 0px;
+  width: 361px;
+  z-index: -1;
+}
+
+@media (max-width: 992px) {
+  .dec_circle_price {
+    top: 50%;
+    width: 204px;
+  }
+}
+
+.qaSection {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.qaSection h2 {
+  margin-top: 100px;
+  margin-bottom: 48px;
+}
+
+.qalist {
+  margin-bottom: 100px;
+}
+
+.qalist li {
   -webkit-box-shadow: 0px 2px 10px #00000014;
           box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.qalist li h4 {
+  position: relative;
+  padding: 16px 32px 16px 32px;
+  color: #221E1F;
+}
+
+.qalist li h4::after {
+  content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_plus.svg");
+  position: absolute;
+  right: 32px;
+}
+
+.qalist li h4.active {
+  color: #56C4C5;
+  font-weight: 700;
+}
+
+.qalist li h4.active::after {
+  content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_minus.svg");
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+
+.qalist li p {
+  padding: 8px 32px 32px 32px;
+  color: #747474;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .qaSection {
+    width: 100%;
+  }
+  .qaSection h2 {
+    margin-top: 60px;
+    margin-bottom: 32px;
+  }
+  .qalist {
+    margin-bottom: 60px;
+  }
+  .qalist h4 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .qalist p {
+    padding: 0px 16px 24px 16px;
+  }
 }
 /*# sourceMappingURL=all.css.map */

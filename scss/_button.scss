@@ -21,8 +21,7 @@
 
 
 
-.btn_solid,
-.btn_active {
+.btn_solid {
     font-size: $fz-middle;
     padding: 12px 32px;
     border-radius: 27px;
@@ -47,6 +46,11 @@
         color: $white;
         background-color: $maincolor;
     }
+}
+
+.btn_active {
+    color: $white;
+    background-color: $maincolor;
 }
 
 

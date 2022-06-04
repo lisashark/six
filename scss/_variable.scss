@@ -16,7 +16,6 @@ $white:#FFFFFF;
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@400;700&family=Wendy+One&display=swap');
 
 $fontFamily-main:'Noto Sans TC','PingFang TC', 'Microsoft JhengHei','微軟正黑體','Helvetica Neue', Helvetica, Arial, sans-serif;
-$fontFfamily-number:'Comfortaa','Noto Sans TC',sans-serif;
 $fontFfamily-top:'Wendy One', sans-serif;
 
 $fz-base:16px;
@@ -27,5 +26,5 @@ $fz-big:20px;
 // basic layout
 
 $breakpoint: 992px;
-$mbreakpoint:624px;
+$mbreakpoint:600px;
 

@@ -28,6 +28,13 @@
     @include fz-fw(16px, 700);
 }
 
+.fz-12b{
+    @include fz-fw(12px, 700);
+}
+
+.fz-32{
+    font-size:32px;
+}
 .fz-20 {
     font-size: 20px;
 }
@@ -72,6 +79,9 @@
 
 .fc-green{color:$maincolor;}
 .fc-black{color:$black-font;}
+.font-number{
+    font-family: 'Comfortaa','Noto Sans TC',sans-serif;
+}
 
 .text-center {
     text-align: center;
